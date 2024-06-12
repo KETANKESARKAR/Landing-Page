@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+#main {
+  width: 100%;
+  height: 100%;
+}
+#top {
+  width: 100%;
+  min-height: 60vh;
+  /* background-image: url("https://images.unsplash.com/photo-1515339760107-1952b7a08454?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c29mdHxlbnwwfHwwfHx8MA%3D%3D"); */
+  background-image: url("https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?cs=srgb&dl=pexels-stywo-1054218.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+ 
+}
+#bottom {
+  width: 100%;
+  min-height: 40vh;
+  /* background-color: rgb(118, 189, 51); */
+  display: flex;
+}
+#overlay {
+  position: relative;
+  width: 100%;
+  min-height: inherit;
+  /* background-color: rgb(134, 126, 126); */
+}
+#text {
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  display: flex;
+  padding: 0 5vw;
+  /* background-color: crimson; */
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+#text h1 {
+  font-size: 5vw;
+  font-weight: 500;
+}
+#textright {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+#textright p {
+  font-size: 22px;
+  width: 40%;
+  font-weight: bold;
+  /* color: black; */
+}
+#textright i {
+  color: black;
+  cursor: pointer;
+  font-size: 5vh;
+}
+#textright i:hover {
+  color: rgb(216, 14, 14);
+  /* font-size: 2vw; */
+}
+#b-one {
+  width: 25%;
+  min-height: inherit;
+  background-color: #383434;
+  padding: 30px;
+  color: white;
+}
+#b-one p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+#b-two {
+  width: 25%;
+  min-height: inherit;
+  
+  background-image: url("https://media.istockphoto.com/id/1156568780/photo/huka-falls-river-in-new-zealand.jpg?s=612x612&w=0&k=20&c=PA-aUZcFIlKcR2hcHPoqacPf2691WQCSFTvNCHwL7F8=");
+  background-size: cover;
+  background-position: center;
+}
+#b-three {
+  width: 20%;
+  min-height: inherit;
+  background-color: rgb(240, 216, 2);
+}
+#b-three-top{
+    width: 100%;
+    min-height: 20vh;
+    padding: 17px;
+    background-color: rgb(48, 34, 34);
+    color: white;
+}
+#b-three p{
+    font-size: 20px;
+    margin-top: 10px;
+    /* padding:0 6px; */
+}
+#b-three-bottom{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("https://img.freepik.com/free-photo/view-boat-floating-water-with-nature-scenery_23-2150693396.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+#b-four {
+  width: 30%;
+  min-height: inherit;
+  background-color: rgb(47, 59, 53);
+  color: white;
+  padding: 30px;
+  
+}
+#notf{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#notf #photo{
+   width: 40px;
+   height: 40px;
+   background-color: rgb(180, 164, 172);
+   border-radius:50% ;
+}
+#notf p{
+    width: 80%;
+    font-size: 20px;
+}
+
+h3{
+    font-size: 2vw;
+}
+
+
+
+@media(max-width: 500px){
+    #overlay #text{
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #overlay #text #textright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    #text h1{
+        font-size: 10vw;
+    }
+
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+
+    #overlay #text #textright #icons{
+      margin-top: 30px;
+      font-size: 10vw;
+    }
+
+    #bottom{
+        flex-direction: column;
+        
+    }
+    #b-one{
+        width: 100%;
+    }
+    #b-two{
+        width: 100%;
+    }
+    #b-three{
+        width: 100%;
+        flex-direction: column;
+    } 
+    #b-three #bottom{
+        min-height: 40vh;
+    }
+    #b-four{
+        width: 100%;
+    }
+ #bottom{
+    min-height: 20vh;
+ }
+}
